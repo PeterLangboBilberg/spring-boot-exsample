@@ -1,0 +1,21 @@
+Creating table in postgresql
+into the container:
+docker exec  -it postgresql bash
+inside the container:
+psql -U username
+\l = list of databases
+CREATE DATABASE name;
+
+To get out:
+ctrl d
+
+To connect to table:
+\c name
+
+list table relations:
+\dt
+\d will show all relations
+
+
+INSERT INTO customer(id,name,email,age)
+VALUES (nextval('custumer_id_sequnce'),'Lotte','Lotte.sorensen@gmail.com',42);
